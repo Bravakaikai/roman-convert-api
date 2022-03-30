@@ -9,17 +9,7 @@
   Integer constraints:
     - 1 <= integer <= 3999
 
-## Project setup
-```
-npm install
-```
-
-## Server start
-```
-npm start
-```
-
-## Demo
+## API
 ### GET Method
 ```
 GET https://roman-convert.herokuapp.com/{integer}
@@ -33,3 +23,15 @@ POST https://roman-convert.herokuapp.com/roman
 
 #### Response
 > roman ( Type: String )
+---
+
+## Project setup
+```
+npm install
+```
+
+## Server start
+```
+npm start
+```
+
