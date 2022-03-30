@@ -13,11 +13,18 @@ app.use(bodyParser.json());
 
 app.get('/:num?', (req, res) => {
     const roman = intToRoman(req.params.num)
-    res.send(roman);
+    // res.send(roman);
+    return res.json({ roman })
 });
 
 app.post('/roman', (req, res) => {
     const roman = intToRoman(req.body.num)
+    return res.json({ roman })
+});
+
+app.post('/romanFromInput', (req, res) => {
+    const { num } = req.body.input
+    const roman = intToRoman(num)
     return res.json({ roman })
 });
 
