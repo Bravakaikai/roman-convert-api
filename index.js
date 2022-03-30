@@ -4,7 +4,7 @@ import cors from 'cors'
 import { intToRoman } from './integerToRoman.js'
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 // Configuring body parser middleware
@@ -15,4 +15,5 @@ app.get('/:num?', (req, res) => {
     const roman = intToRoman(req.params.num)
     res.send(roman);
 });
+
 app.listen(port, () => console.log(`App listening on port ${port}!`))

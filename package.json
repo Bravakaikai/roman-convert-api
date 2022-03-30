@@ -1,7 +1,7 @@
 {
   "name": "roman-convert-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "node api hosted on heroku",
   "main": "index.js",
   "type": "module",
   "scripts": {
