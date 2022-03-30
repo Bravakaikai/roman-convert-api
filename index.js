@@ -16,4 +16,9 @@ app.get('/:num?', (req, res) => {
     res.send(roman);
 });
 
+app.post('/roman', (req, res) => {
+    const roman = intToRoman(req.body.num)
+    return res.json({ roman })
+});
+
 app.listen(port, () => console.log(`App listening on port ${port}!`))

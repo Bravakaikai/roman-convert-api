@@ -19,7 +19,17 @@ npm install
 npm start
 ```
 
-## GET API
+## Demo
+### GET Method
 ```
-https://roman-convert.herokuapp.com/{integer}
+GET https://roman-convert.herokuapp.com/{integer}
 ```
+### POST Method
+```
+POST https://roman-convert.herokuapp.com/roman
+```
+#### Request body
+> num ( Type: Integer )
+
+#### Response
+> roman ( Type: String )
