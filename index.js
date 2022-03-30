@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/roman/:num?', (req, res) => {
+app.get('/:num?', (req, res) => {
     const roman = intToRoman(req.params.num)
     res.send(roman);
 });
