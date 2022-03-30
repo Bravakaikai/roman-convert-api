@@ -19,7 +19,7 @@ npm install
 npm start
 ```
 
-## API
+## GET API
 ```
 https://roman-convert.herokuapp.com/{integer}
 ```
