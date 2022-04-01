@@ -9,6 +9,8 @@
   Integer constraints:
     - 1 <= integer <= 3999
 
+* Add firebase admin sdk to verify id token from the client app. 
+
 ## API
 ### GET Method
 ```
